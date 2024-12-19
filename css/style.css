@@ -550,7 +550,7 @@ img{
     padding: 0;
     background-color: #e7e9fc;
     cursor: pointer;
-    border: rgba(0, 0, 0, 0.1);;
+    border: rgba(0, 0, 0, 0.1);
     fill: #2e2f42;
     display: flex;
     align-items: center;
@@ -562,6 +562,7 @@ img{
 .close-btn:focus{
     fill: #ffffff;
     background-color: #404bbf;
+    border: none;
 }
 
 .form-user-label{
@@ -586,7 +587,7 @@ img{
     border-radius: 4px;
     height: 40px;
     padding: 11px 38px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-user-input:focus{
@@ -623,9 +624,10 @@ img{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4)
+    color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     outline: transparent;
+    
 }
 
 .form-user-comment::placeholder{
@@ -713,6 +715,10 @@ img{
     background-color: #404bbf;
 }
 
+
+
+
+
 .subscribe-text{
     font-weight: 500;
     font-size: 16px;
@@ -728,10 +734,15 @@ img{
     width: 264px;
     height: 40px;
     background-color: transparent;
-    padding: 8px 16px;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #fff;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 .subscribe-input:focus{
@@ -745,11 +756,13 @@ img{
 }
 
 .subscribe-btn{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
     display: inline-flex;
     border-radius: 4px;
     border: none;
-    padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     font-weight: 500;
@@ -769,6 +782,7 @@ img{
 
 .subscribe-icon{
     fill: #fff;
+    margin-left: 16px;
 }
 
 .subscribe-input::placeholder{
@@ -776,7 +790,7 @@ img{
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .subscribe-container{
